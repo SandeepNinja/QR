@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import QRCode from "react-qr-code";
 import styles from "../styles/staticQrCode.module.css";
 import { toPng } from "html-to-image";
@@ -44,6 +45,9 @@ function StaticQR() {
 
   return (
     <div className={styles.basicQRBage}>
+       <Link to="/dynamicqr" className={styles.link}>
+                <marquee direction="right" behavior="alternate"  className={styles.ribbon}>For Multi URL Dynamic QR click here...</marquee >
+              </Link>
       <div className={styles.basicQRLeft}>
         <div className={`${styles.logo} ${styles.miniContainer}`}>
           <label>Logo</label>

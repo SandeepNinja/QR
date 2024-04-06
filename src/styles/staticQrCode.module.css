@@ -101,6 +101,10 @@
   /* padding: 20px; */
 }
 
+.link{
+  display: none;
+}
+
 @media (max-width: 630px) {
   .basicQRBage {
     flex-direction: column;
@@ -136,4 +140,18 @@
   .QRCodeImage {
     height: 60vw;
   }
+  .link{
+    display: block;
+    text-align: -webkit-center;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .ribbon{
+    color: black;
+  /* width: 50%; */
+  height: 48px;
+  align-content: center; 
+  }
 }
+
+
